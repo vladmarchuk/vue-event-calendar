@@ -73,7 +73,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 9);
+/******/ 	return __webpack_require__(__webpack_require__.s = 7);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -197,129 +197,17 @@ module.exports = function normalizeComponent (
 
 /***/ }),
 /* 2 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony default export */ __webpack_exports__["a"] = ({
-  en: {
-    dayNames: ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
-    monthNames: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
-    format: 'MM/yyyy',
-    fullFormat: 'dd/MM/yyyy',
-    dayEventsTitle: 'All Events',
-    notHaveEvents: 'Not Have Events'
-  },
-  zh: {
-    dayNames: ["日", "一", "二", "三", "四", "五", "六"],
-    monthNames: ["一月", "二月", "三月", "四月", "五月", "六月", "七月", "八月", "九月", "十月", "十一月", "十二月"],
-    format: 'yyyy年MM月',
-    fullFormat: 'yyyy年MM月dd日',
-    dayEventsTitle: '全部事件',
-    notHaveEvents: '没有事件'
-  },
-  us: {
-    dayNames: ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
-    monthNames: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
-    format: 'MM/yyyy',
-    fullFormat: 'MM/dd/yyyy',
-    dayEventsTitle: 'All Events',
-    notHaveEvents: 'Not Have Events'
-  },
-  es: {
-    dayNames: ["Do", "Lu", "Ma", "Mi", "Ju", "Vi", "Sá"],
-    monthNames: ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"],
-    format: 'MM/yyyy',
-    fullFormat: 'dd/MM/yyyy',
-    dayEventsTitle: 'Todos los eventos',
-    notHaveEvents: 'Nada'
-  },
-  'pt-br': {
-    dayNames: ["Dom", "Seg", "Ter", "Qua", "Qui", "Sex", "Sáb"],
-    monthNames: ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"],
-    format: 'MM/yyyy',
-    fullFormat: 'dd/MM/yyyy',
-    dayEventsTitle: 'Todos os eventos',
-    notHaveEvents: 'Nenhum evento'
-  },
-  ja: {
-    dayNames: ["日", "月", "火", "水", "木", "金", "土"],
-    monthNames: ["1月", "2月", "3月", "4月", "5月", "6月", "7月", "8月", "9月", "10月", "11月", "12月"],
-    format: 'yyyy/MM',
-    fullFormat: 'yyyy/MM/dd',
-    dayEventsTitle: '全てのイベント',
-    notHaveEvents: 'イベントはありません'
-  },
-  ko: {
-    dayNames: ["일", "월", "화", "수", "목", "금", "토"],
-    monthNames: ["1월", "2월", "3월", "4월", "5월", "6월", "7월", "8월", "9월", "10월", "11월", "12월"],
-    format: 'yyyy/MM',
-    fullFormat: 'yyyy/MM/dd',
-    dayEventsTitle: '모든 이벤트',
-    notHaveEvents: '일정이 없습니다'
-  },
-  fr: {
-    dayNames: ["Dim", "Lun", "Mar", "Mer", "Jeu", "Ven", "Sam"],
-    monthNames: ["Janvier", "Février", "Mars", "Avril", "Mai", "Juin", "Juillet", "Août", "Septembre", "Octobre", "Novembre", "Décembre"],
-    format: 'MM/yyyy',
-    fullFormat: 'dd/MM/yyyy',
-    dayEventsTitle: 'Tous les événements',
-    notHaveEvents: 'Aucun événement'
-  },
-  it: {
-    dayNames: ["Dom", "Lun", "Mar", "Mer", "Gio", "Ven", "Sab"],
-    monthNames: ["Gennaio", "Febbraio", "Marzo", "Aprile", "Maggio", "Giugno", "Luglio", "Agosto", "Settembre", "Ottobre", "Novembre", "Dicembre"],
-    format: 'MM/yyyy',
-    fullFormat: 'dd/MM/yyyy',
-    dayEventsTitle: 'Tutti gli eventi',
-    notHaveEvents: 'Nessun evento'
-  },
-  ru: {
-    dayNames: ["Вс", "Пн", "Вт", "Ср", "Чт", "Пт", "Сб"],
-    monthNames: ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"],
-    format: 'MM.yyyy',
-    fullFormat: 'dd.MM.yyyy',
-    dayEventsTitle: 'Все события',
-    notHaveEvents: 'События отсутствуют'
-  },
-  sv: {
-    dayNames: ["Sön", "Mån", "Tis", "Ons", "Tor", "Fre", "Lör"],
-    monthNames: ["Januari", "Februari", "Mars", "April", "Maj", "Juni", "Juli", "Augusti", "September", "Oktober", "November", "December"],
-    format: 'MM/yyyy',
-    fullFormat: 'dd/MM/yyyy',
-    dayEventsTitle: 'Alla händelser',
-    notHaveEvents: 'Inga händelser'
-  },
-  de: {
-    dayNames: ["So", "Mo", "Di", "Mi", "Do", "Fr", "Sa"],
-    monthNames: ["Januar", "Februar", "März", "April", "Mai", "Juni", "Juli", "August", "September", "Oktober", "November", "Dezember"],
-    format: 'MM/yyyy',
-    fullFormat: 'dd.MM.yyyy',
-    dayEventsTitle: 'Alle Veranstaltungen',
-    notHaveEvents: 'Keine Veranstaltungen'
-  },
-  vi: {
-    dayNames: ["T2", "T3", "T4", "T5", "T6", "T7", "CN"],
-    monthNames: ["Tháng 1", "Tháng 2", "Tháng 3", "Tháng 4", "Tháng 5", "Tháng 6", "Tháng 7", "Tháng 8", "Tháng 9", "Tháng 10", "Tháng 11", "Tháng 12"],
-    format: 'MM/yyyy',
-    fullFormat: 'dd/MM/yyyy',
-    dayEventsTitle: 'Tất cả sự kiện',
-    notHaveEvents: 'Không có sự kiện nào'
-  }
-});
-
-/***/ }),
-/* 3 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
 /* styles */
-__webpack_require__(10)
+__webpack_require__(8)
 
 var Component = __webpack_require__(1)(
   /* script */
-  __webpack_require__(8),
+  __webpack_require__(5),
   /* template */
-  __webpack_require__(16),
+  __webpack_require__(10),
   /* scopeId */
   null,
   /* cssModules */
@@ -330,7 +218,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 4 */
+/* 3 */
 /***/ (function(module, exports) {
 
 module.exports = function(originalModule) {
@@ -360,144 +248,13 @@ module.exports = function(originalModule) {
 
 
 /***/ }),
-/* 5 */
+/* 4 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__i18n_js__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__i18n_js__ = __webpack_require__(6);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__tools_js__ = __webpack_require__(0);
-//
-//
-//
-//
-//
-//
-//
-
-
-
-/* harmony default export */ __webpack_exports__["default"] = ({
-  data: function data() {
-    return {
-      i18n: __WEBPACK_IMPORTED_MODULE_0__i18n_js__["a" /* default */]
-    };
-  },
-
-  props: {
-    event: {
-      type: Object,
-      required: true
-    },
-    index: {
-      type: Number,
-      required: true
-    },
-    locale: {
-      type: String,
-      required: true
-    }
-  },
-  methods: {
-    dateTimeFormatter: __WEBPACK_IMPORTED_MODULE_1__tools_js__["b" /* dateTimeFormatter */]
-  }
-});
-
-/***/ }),
-/* 6 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__i18n_js__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__tools_js__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__cal_event_item_vue__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__cal_event_item_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__cal_event_item_vue__);
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
-
-
-
-/* harmony default export */ __webpack_exports__["default"] = ({
-  name: 'cal-events',
-  data: function data() {
-    return {
-      i18n: __WEBPACK_IMPORTED_MODULE_0__i18n_js__["a" /* default */]
-    };
-  },
-
-  components: {
-    'cal-event-item': __WEBPACK_IMPORTED_MODULE_2__cal_event_item_vue___default.a
-  },
-  props: {
-    title: String,
-    dayEvents: {
-      type: Object,
-      required: true
-    },
-    locale: {
-      type: String,
-      required: true
-    },
-    color: {
-      type: String,
-      required: true
-    }
-  },
-  computed: {
-    dayEventsTitle: function dayEventsTitle() {
-      if (this.title) return this.title;
-      if (this.dayEvents.date !== 'all') {
-        var tempDate = void 0;
-        if (this.dayEvents.events.length !== 0) {
-          tempDate = Date.parse(new Date(this.dayEvents.events[0].date));
-          return __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__tools_js__["b" /* dateTimeFormatter */])(tempDate, __WEBPACK_IMPORTED_MODULE_0__i18n_js__["a" /* default */][this.locale].fullFormat);
-        } else {
-          tempDate = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__tools_js__["b" /* dateTimeFormatter */])(Date.parse(new Date(this.dayEvents.date)), __WEBPACK_IMPORTED_MODULE_0__i18n_js__["a" /* default */][this.locale].fullFormat);
-          return tempDate + ' ' + __WEBPACK_IMPORTED_MODULE_0__i18n_js__["a" /* default */][this.locale].notHaveEvents;
-        }
-      } else {
-        return __WEBPACK_IMPORTED_MODULE_0__i18n_js__["a" /* default */][this.locale].dayEventsTitle;
-      }
-    },
-    events: function events() {
-      return this.dayEvents.events;
-    },
-    bgColor: function bgColor() {
-      return { backgroundColor: this.color };
-    }
-  },
-  methods: {
-    dateTimeFormatter: __WEBPACK_IMPORTED_MODULE_1__tools_js__["b" /* dateTimeFormatter */]
-  }
-});
-
-/***/ }),
-/* 7 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__i18n_js__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__tools_js__ = __webpack_require__(0);
-//
-//
-//
-//
 //
 //
 //
@@ -595,12 +352,14 @@ var inBrowser = typeof window !== 'undefined';
         this.events.forEach(function (event) {
           if (__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__tools_js__["a" /* isEqualDateStr */])(event.date, tempItem.date)) {
             tempItem.title = event.title;
+            tempItem.category = event.category;
             tempItem.desc = event.desc || '';
             if (event.customClass) tempItem.customClass.push(event.customClass);
           }
         });
         tempArr.push(tempItem);
       }
+
       return tempArr;
     },
     today: function today() {
@@ -611,6 +370,11 @@ var inBrowser = typeof window !== 'undefined';
       var tempDate = Date.parse(new Date(this.calendar.params.curYear + '/' + (this.calendar.params.curMonth + 1) + '/01'));
       return __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__tools_js__["b" /* dateTimeFormatter */])(tempDate, this.i18n[this.calendar.options.locale].format);
     },
+    prettyMonthYear: function prettyMonthYear() {
+      var date = this.curYearMonth.split('/');
+      var monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+      return monthNames[parseInt(date[0] - 1)] + ' ' + date[1];
+    },
     customColor: function customColor() {
       return this.calendar.options.color;
     }
@@ -618,6 +382,7 @@ var inBrowser = typeof window !== 'undefined';
   methods: {
     nextMonth: function nextMonth() {
       this.$EventCalendar.nextMonth();
+      console.log(this.curYearMonth);
       this.$emit('month-changed', this.curYearMonth);
     },
     preMonth: function preMonth() {
@@ -633,16 +398,14 @@ var inBrowser = typeof window !== 'undefined';
 });
 
 /***/ }),
-/* 8 */
+/* 5 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__tools_js__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_cal_events_vue__ = __webpack_require__(12);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_cal_events_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__components_cal_events_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_cal_panel_vue__ = __webpack_require__(13);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_cal_panel_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__components_cal_panel_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_cal_panel_vue__ = __webpack_require__(9);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_cal_panel_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__components_cal_panel_vue__);
 //
 //
 //
@@ -654,14 +417,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-
 
 
 
@@ -671,8 +426,7 @@ var inBrowser = typeof window !== 'undefined';
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'vue-event-calendar',
   components: {
-    'cal-events': __WEBPACK_IMPORTED_MODULE_1__components_cal_events_vue___default.a,
-    'cal-panel': __WEBPACK_IMPORTED_MODULE_2__components_cal_panel_vue___default.a
+    'cal-panel': __WEBPACK_IMPORTED_MODULE_1__components_cal_panel_vue___default.a
   },
   data: function data() {
     return {
@@ -790,12 +544,132 @@ var inBrowser = typeof window !== 'undefined';
 });
 
 /***/ }),
-/* 9 */
+/* 6 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony default export */ __webpack_exports__["a"] = ({
+  en: {
+    dayNames: ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
+    monthNames: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
+    format: 'MM/yyyy',
+    fullFormat: 'dd/MM/yyyy',
+    dayEventsTitle: 'All Events',
+    notHaveEvents: 'Not Have Events'
+  },
+  zh: {
+    dayNames: ["日", "一", "二", "三", "四", "五", "六"],
+    monthNames: ["一月", "二月", "三月", "四月", "五月", "六月", "七月", "八月", "九月", "十月", "十一月", "十二月"],
+    format: 'yyyy年MM月',
+    fullFormat: 'yyyy年MM月dd日',
+    dayEventsTitle: '全部事件',
+    notHaveEvents: '没有事件'
+  },
+  us: {
+    dayNames: ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
+    monthNames: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
+    format: 'MM/yyyy',
+    fullFormat: 'MM/dd/yyyy',
+    dayEventsTitle: 'All Events',
+    notHaveEvents: 'Not Have Events'
+  },
+  es: {
+    dayNames: ["Do", "Lu", "Ma", "Mi", "Ju", "Vi", "Sá"],
+    monthNames: ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"],
+    format: 'MM/yyyy',
+    fullFormat: 'dd/MM/yyyy',
+    dayEventsTitle: 'Todos los eventos',
+    notHaveEvents: 'Nada'
+  },
+  'pt-br': {
+    dayNames: ["Dom", "Seg", "Ter", "Qua", "Qui", "Sex", "Sáb"],
+    monthNames: ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"],
+    format: 'MM/yyyy',
+    fullFormat: 'dd/MM/yyyy',
+    dayEventsTitle: 'Todos os eventos',
+    notHaveEvents: 'Nenhum evento'
+  },
+  ja: {
+    dayNames: ["日", "月", "火", "水", "木", "金", "土"],
+    monthNames: ["1月", "2月", "3月", "4月", "5月", "6月", "7月", "8月", "9月", "10月", "11月", "12月"],
+    format: 'yyyy/MM',
+    fullFormat: 'yyyy/MM/dd',
+    dayEventsTitle: '全てのイベント',
+    notHaveEvents: 'イベントはありません'
+  },
+  ko: {
+    dayNames: ["일", "월", "화", "수", "목", "금", "토"],
+    monthNames: ["1월", "2월", "3월", "4월", "5월", "6월", "7월", "8월", "9월", "10월", "11월", "12월"],
+    format: 'yyyy/MM',
+    fullFormat: 'yyyy/MM/dd',
+    dayEventsTitle: '모든 이벤트',
+    notHaveEvents: '일정이 없습니다'
+  },
+  fr: {
+    dayNames: ["Dim", "Lun", "Mar", "Mer", "Jeu", "Ven", "Sam"],
+    monthNames: ["Janvier", "Février", "Mars", "Avril", "Mai", "Juin", "Juillet", "Août", "Septembre", "Octobre", "Novembre", "Décembre"],
+    format: 'MM/yyyy',
+    fullFormat: 'dd/MM/yyyy',
+    dayEventsTitle: 'Tous les événements',
+    notHaveEvents: 'Aucun événement'
+  },
+  it: {
+    dayNames: ["Dom", "Lun", "Mar", "Mer", "Gio", "Ven", "Sab"],
+    monthNames: ["Gennaio", "Febbraio", "Marzo", "Aprile", "Maggio", "Giugno", "Luglio", "Agosto", "Settembre", "Ottobre", "Novembre", "Dicembre"],
+    format: 'MM/yyyy',
+    fullFormat: 'dd/MM/yyyy',
+    dayEventsTitle: 'Tutti gli eventi',
+    notHaveEvents: 'Nessun evento'
+  },
+  ru: {
+    dayNames: ["Вс", "Пн", "Вт", "Ср", "Чт", "Пт", "Сб"],
+    monthNames: ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"],
+    format: 'MM.yyyy',
+    fullFormat: 'dd.MM.yyyy',
+    dayEventsTitle: 'Все события',
+    notHaveEvents: 'События отсутствуют'
+  },
+  sv: {
+    dayNames: ["Sön", "Mån", "Tis", "Ons", "Tor", "Fre", "Lör"],
+    monthNames: ["Januari", "Februari", "Mars", "April", "Maj", "Juni", "Juli", "Augusti", "September", "Oktober", "November", "December"],
+    format: 'MM/yyyy',
+    fullFormat: 'dd/MM/yyyy',
+    dayEventsTitle: 'Alla händelser',
+    notHaveEvents: 'Inga händelser'
+  },
+  de: {
+    dayNames: ["So", "Mo", "Di", "Mi", "Do", "Fr", "Sa"],
+    monthNames: ["Januar", "Februar", "März", "April", "Mai", "Juni", "Juli", "August", "September", "Oktober", "November", "Dezember"],
+    format: 'MM/yyyy',
+    fullFormat: 'dd.MM.yyyy',
+    dayEventsTitle: 'Alle Veranstaltungen',
+    notHaveEvents: 'Keine Veranstaltungen'
+  },
+  vi: {
+    dayNames: ["T2", "T3", "T4", "T5", "T6", "T7", "CN"],
+    monthNames: ["Tháng 1", "Tháng 2", "Tháng 3", "Tháng 4", "Tháng 5", "Tháng 6", "Tháng 7", "Tháng 8", "Tháng 9", "Tháng 10", "Tháng 11", "Tháng 12"],
+    format: 'MM/yyyy',
+    fullFormat: 'dd/MM/yyyy',
+    dayEventsTitle: 'Tất cả sự kiện',
+    notHaveEvents: 'Không có sự kiện nào'
+  },
+  ua: {
+    dayNames: ["Нд", "Пн", "Вт", "Ср", "Чт", "Пт", "Сб"],
+    monthNames: ["Січень", "Лютий", "Березень", "Квітень", "Травень", "Червень", "Липень", "Серпень", "Вересень", "Жовтень", "Листопад", "Грудень"],
+    format: 'MM.yyyy',
+    fullFormat: 'dd.MM.yyyy',
+    dayEventsTitle: 'Усі події',
+    notHaveEvents: 'Події відсутні'
+  }
+});
+
+/***/ }),
+/* 7 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* WEBPACK VAR INJECTION */(function(module) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__vue_event_calendar_vue__ = __webpack_require__(3);
+/* WEBPACK VAR INJECTION */(function(module) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__vue_event_calendar_vue__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__vue_event_calendar_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__vue_event_calendar_vue__);
 
 
@@ -810,7 +684,7 @@ function install(Vue) {
   var inBrowser = typeof window !== 'undefined';
   var dateObj = new Date();
   var DEFAULT_OPTION = {
-    locale: 'zh', // en
+    locale: 'en', // en
     color: ' #f29543',
     className: 'selected-day',
     weekStartOn: 0 // 0 mean sunday
@@ -890,23 +764,23 @@ function install(Vue) {
 if (( false ? 'undefined' : _typeof(module)) === 'object' && module.exports) {
   module.exports.install = install;
 }
-/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(4)(module)))
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(3)(module)))
 
 /***/ }),
-/* 10 */
+/* 8 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-/* 11 */
+/* 9 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var Component = __webpack_require__(1)(
   /* script */
-  __webpack_require__(5),
+  __webpack_require__(4),
   /* template */
-  __webpack_require__(14),
+  __webpack_require__(11),
   /* scopeId */
   null,
   /* cssModules */
@@ -917,84 +791,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 12 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var Component = __webpack_require__(1)(
-  /* script */
-  __webpack_require__(6),
-  /* template */
-  __webpack_require__(15),
-  /* scopeId */
-  null,
-  /* cssModules */
-  null
-)
-
-module.exports = Component.exports
-
-
-/***/ }),
-/* 13 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var Component = __webpack_require__(1)(
-  /* script */
-  __webpack_require__(7),
-  /* template */
-  __webpack_require__(17),
-  /* scopeId */
-  null,
-  /* cssModules */
-  null
-)
-
-module.exports = Component.exports
-
-
-/***/ }),
-/* 14 */
-/***/ (function(module, exports) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "wrapper"
-  }, [_c('h3', {
-    staticClass: "title"
-  }, [_vm._v(_vm._s(_vm.index + 1) + ". " + _vm._s(_vm.event.title))]), _vm._v(" "), _c('p', {
-    staticClass: "time"
-  }, [_vm._v(_vm._s(_vm.dateTimeFormatter(Date.parse(new Date(_vm.event.date)), _vm.i18n[_vm.locale].fullFormat)))]), _vm._v(" "), _c('p', {
-    staticClass: "desc"
-  }, [_vm._v(_vm._s(_vm.event.desc))])])
-},staticRenderFns: []}
-
-/***/ }),
-/* 15 */
-/***/ (function(module, exports) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "events-wrapper",
-    style: (_vm.bgColor)
-  }, [_c('h2', {
-    staticClass: "date"
-  }, [_vm._v("\n    " + _vm._s(_vm.dayEventsTitle) + "\n  ")]), _vm._v(" "), _c('div', {
-    staticClass: "cal-events"
-  }, [_vm._t("default", _vm._l((_vm.events), function(event, index) {
-    return _c('div', {
-      staticClass: "event-item"
-    }, [_c('cal-event-item', {
-      attrs: {
-        "event": event,
-        "index": index,
-        "locale": _vm.locale
-      }
-    })], 1)
-  }))], 2)])
-},staticRenderFns: []}
-
-/***/ }),
-/* 16 */
+/* 10 */
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -1010,20 +807,11 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "cur-day-changed": _vm.handleChangeCurDay,
       "month-changed": _vm.handleMonthChanged
     }
-  }), _vm._v(" "), _c('cal-events', {
-    attrs: {
-      "title": _vm.title,
-      "dayEvents": _vm.selectedDayEvents,
-      "locale": _vm.calendarOptions.options.locale,
-      "color": _vm.calendarOptions.options.color
-    }
-  }, [_vm._t("default", null, {
-    showEvents: _vm.selectedDayEvents.events
-  })], 2)], 1)
+  })], 1)
 },staticRenderFns: []}
 
 /***/ }),
-/* 17 */
+/* 11 */
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -1032,6 +820,10 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('div', {
     staticClass: "cal-header"
   }, [_c('div', {
+    staticClass: "title"
+  }, [_vm._v(_vm._s(_vm.prettyMonthYear))]), _vm._v(" "), _c('div', {
+    staticClass: "cal-navigation"
+  }, [_c('div', {
     staticClass: "l",
     on: {
       "click": _vm.preMonth
@@ -1039,24 +831,15 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('div', {
     staticClass: "arrow-left icon"
   }, [_vm._v(" ")])]), _vm._v(" "), _c('div', {
-    staticClass: "title"
-  }, [_vm._v(_vm._s(_vm.curYearMonth))]), _vm._v(" "), _c('div', {
     staticClass: "r",
     on: {
       "click": _vm.nextMonth
     }
   }, [_c('div', {
     staticClass: "arrow-right icon"
-  }, [_vm._v(" ")])])]), _vm._v(" "), _c('div', {
+  }, [_vm._v(" ")])])])]), _vm._v(" "), _c('div', {
     staticClass: "cal-body"
   }, [_c('div', {
-    staticClass: "weeks"
-  }, _vm._l((_vm.i18n[_vm.calendar.options.locale].dayNames), function(dayName, dayIndex) {
-    return _c('span', {
-      key: dayIndex,
-      staticClass: "item"
-    }, [_vm._v("\n        " + _vm._s(_vm.i18n[_vm.calendar.options.locale].dayNames[(dayIndex + _vm.calendar.options.weekStartOn) % 7]) + "\n      ")])
-  })), _vm._v(" "), _c('div', {
     staticClass: "dates"
   }, _vm._l((_vm.dayList), function(date) {
     return _c('div', {
@@ -1087,7 +870,13 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         borderColor: _vm.customColor,
         backgroundColor: (date.date == _vm.selectedDay) ? _vm.customColor : 'inherit'
       })
-    }) : _vm._e()])
+    }) : _vm._e(), _vm._v(" "), (date.category === '') ? _c('span', {
+      staticClass: "date-dot"
+    }, [_vm._v(" ")]) : _vm._e(), _vm._v(" "), (date.category === 'global-colleagues') ? _c('span', {
+      staticClass: "date-dot date-dot--colleagues"
+    }, [_vm._v(" ")]) : _vm._e(), _vm._v(" "), (date.category === 'national') ? _c('span', {
+      staticClass: "date-dot date-dot--national"
+    }, [_vm._v(" ")]) : _vm._e()])
     var _obj;
   }))])])
 },staticRenderFns: []}

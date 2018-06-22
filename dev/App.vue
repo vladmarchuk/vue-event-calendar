@@ -10,10 +10,7 @@
     <h2 class="t-center">Custom template</h2>
     <vue-event-calendar :events="demoEvents">
       <template scope="props">
-        <div v-for="(event, index) in props.showEvents" class="event-item">
-          <!-- In here do whatever you want, make you owner event template -->
-          {{event}}
-        </div>
+          <div></div>
       </template>
     </vue-event-calendar>
   </div>
@@ -53,10 +50,23 @@ export default {
         date: `${today.getFullYear()}/${today.getMonth() + 1}/15`,
         title: 'Title-1',
         desc: 'longlonglong description'
-      },{
+      },
+      {
         date: `${today.getFullYear()}/${today.getMonth() + 1}/24`,
-        title: 'Title-2'
-      },{
+        title: 'Title-2',
+        category: '',
+      },
+      {
+        date: `${today.getFullYear()}/${today.getMonth() + 1}/22`,
+        title: 'Title-2',
+        category: 'global-colleagues',
+      },
+      {
+        date: `${today.getFullYear()}/${today.getMonth() + 1}/25`,
+        title: 'Title-2',
+        category: 'national',
+      },
+      {
         date: `${today.getFullYear()}/${today.getMonth() === 11 ? 1 : today.getMonth() + 2}/06`,
         title: 'Title-3',
         desc: 'description'
@@ -65,6 +75,7 @@ export default {
   },
   methods: {
     handleDayChanged (data) {
+      console.log(data);
     },
     handleMonthChanged (data) {
     }

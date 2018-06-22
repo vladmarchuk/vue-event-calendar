@@ -1,20 +1,13 @@
 <template>
   <div class="cal-wrapper">
     <div class="cal-header">
-      <div class="l" @click="preMonth"><div class="arrow-left icon">&nbsp</div></div>
-      <div class="title">{{curYearMonth}}</div>
-      <div class="r" @click="nextMonth"><div class="arrow-right icon">&nbsp</div></div>
+      <div class="title">{{prettyMonthYear}}</div>
+      <div class='cal-navigation'>
+        <div class="l" @click="preMonth"><div class="arrow-left icon">&nbsp</div></div>
+        <div class="r" @click="nextMonth"><div class="arrow-right icon">&nbsp</div></div>
+      </div>
     </div>
     <div class="cal-body">
-      <div class="weeks">
-        <span
-          v-for="(dayName, dayIndex) in i18n[calendar.options.locale].dayNames"
-          class="item"
-          :key="dayIndex"
-          >
-          {{i18n[calendar.options.locale].dayNames[(dayIndex + calendar.options.weekStartOn) % 7]}}
-        </span>
-      </div>
       <div class="dates" >
         <div v-for="date in dayList" class="item"
           :class="[{
@@ -31,6 +24,9 @@
           <span v-if="date.status ? (today == date.date) : false" class="is-today" :style="{backgroundColor: customColor }" ></span>
           <span v-if="date.status ? (date.title != undefined) : false" class="is-event"
             :style="{borderColor: customColor, backgroundColor: (date.date == selectedDay) ? customColor : 'inherit'}"></span>
+                      <span v-if="date.category === ''" class="date-dot">&nbsp;</span>
+          <span v-if="date.category === 'global-colleagues'" class="date-dot date-dot--colleagues">&nbsp;</span>
+          <span v-if="date.category === 'national'" class="date-dot date-dot--national">&nbsp;</span>
         </div>
       </div>
     </div>
@@ -95,12 +91,14 @@ export default {
           this.events.forEach((event) => {
             if (isEqualDateStr(event.date, tempItem.date)) {
               tempItem.title = event.title
+              tempItem.category = event.category
               tempItem.desc = event.desc || ''
               if (event.customClass) tempItem.customClass.push(event.customClass)
             }
           })
           tempArr.push(tempItem)
       }
+
       return tempArr
     },
     today () {
@@ -111,6 +109,13 @@ export default {
       let tempDate = Date.parse(new Date(`${this.calendar.params.curYear}/${this.calendar.params.curMonth+1}/01`))
       return dateTimeFormatter(tempDate, this.i18n[this.calendar.options.locale].format)
     },
+    prettyMonthYear() {
+      let date = this.curYearMonth.split('/');
+      const monthNames = ["January", "February", "March", "April", "May", "June",
+        "July", "August", "September", "October", "November", "December"
+      ];
+      return `${monthNames[parseInt(date[0] - 1)]} ${date[1]}`;
+    },
     customColor () {
       return this.calendar.options.color
     }
@@ -118,6 +123,7 @@ export default {
   methods: {
     nextMonth () {
       this.$EventCalendar.nextMonth()
+      console.log(this.curYearMonth)
       this.$emit('month-changed', this.curYearMonth)
     },
     preMonth () {

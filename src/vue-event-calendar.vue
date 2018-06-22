@@ -7,26 +7,17 @@
       @cur-day-changed="handleChangeCurDay"
       @month-changed="handleMonthChanged">
     </cal-panel>
-    <cal-events
-      :title="title"
-      :dayEvents="selectedDayEvents"
-      :locale="calendarOptions.options.locale"
-      :color="calendarOptions.options.color">
-      <slot :showEvents="selectedDayEvents.events"></slot>
-    </cal-events>
   </div>
 </template>
 <script>
 import { isEqualDateStr} from './tools.js'
 
-import calEvents from './components/cal-events.vue'
 import calPanel from './components/cal-panel.vue'
 
 const inBrowser = typeof window !== 'undefined'
 export default {
   name: 'vue-event-calendar',
   components: {
-    'cal-events': calEvents,
     'cal-panel': calPanel
   },
   data () {
