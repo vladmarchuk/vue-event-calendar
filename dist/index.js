@@ -870,7 +870,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         borderColor: _vm.customColor,
         backgroundColor: (date.date == _vm.selectedDay) ? _vm.customColor : 'inherit'
       })
-    }) : _vm._e(), _vm._v(" "), (date.category === '') ? _c('span', {
+    }) : _vm._e(), _vm._v(" "), (date.category === 'local') ? _c('span', {
       staticClass: "date-dot"
     }, [_vm._v(" ")]) : _vm._e(), _vm._v(" "), (date.category === 'global-colleagues') ? _c('span', {
       staticClass: "date-dot date-dot--colleagues"
