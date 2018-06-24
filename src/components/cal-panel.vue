@@ -24,7 +24,7 @@
           <span v-if="date.status ? (today == date.date) : false" class="is-today" :style="{backgroundColor: customColor }" ></span>
           <span v-if="date.status ? (date.title != undefined) : false" class="is-event"
             :style="{borderColor: customColor, backgroundColor: (date.date == selectedDay) ? customColor : 'inherit'}"></span>
-                      <span v-if="date.category === ''" class="date-dot">&nbsp;</span>
+          <span v-if="date.category === 'local'" class="date-dot">&nbsp;</span>
           <span v-if="date.category === 'global-colleagues'" class="date-dot date-dot--colleagues">&nbsp;</span>
           <span v-if="date.category === 'national'" class="date-dot date-dot--national">&nbsp;</span>
         </div>
