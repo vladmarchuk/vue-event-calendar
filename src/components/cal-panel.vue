@@ -27,6 +27,7 @@
           <span v-if="date.status && date.category === 'local'" class="date-dot">&nbsp;</span>
           <span v-if="date.status && date.category === 'global-colleagues'" class="date-dot date-dot--colleagues">&nbsp;</span>
           <span v-if="date.status && date.category === 'national'" class="date-dot date-dot--national">&nbsp;</span>
+          <span v-if="date.status && date.category === 'endorsed'" class="date-dot date-dot--endorsed">&nbsp;</span>
         </div>
       </div>
     </div>
