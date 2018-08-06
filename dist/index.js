@@ -290,6 +290,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
 
 
 
@@ -876,6 +877,8 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       staticClass: "date-dot date-dot--colleagues"
     }, [_vm._v(" ")]) : _vm._e(), _vm._v(" "), (date.status && date.category === 'national') ? _c('span', {
       staticClass: "date-dot date-dot--national"
+    }, [_vm._v(" ")]) : _vm._e(), _vm._v(" "), (date.status && date.category === 'endorsed') ? _c('span', {
+      staticClass: "date-dot date-dot--endorsed"
     }, [_vm._v(" ")]) : _vm._e()])
     var _obj;
   }))])])
